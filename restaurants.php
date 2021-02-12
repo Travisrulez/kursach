@@ -43,7 +43,8 @@ foreach ($_SESSION["cart_item"] as $item)
 
                                     <div class="title-row">
                                         <?php echo $item["title"]; ?>
-                                        <a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>&action=remove&id=<?php echo $item[" d_id "]; ?>">
+                                       
+                                        <a href="dishes.php?res_id=<?=$_SESSION['re_id'];?>&action=remove&id=<?php echo $_SESSION['dd_id'];?>">
                                             <i class="fa fa-trash pull-right"></i></a>
                                     </div>
                                     <div class="form-group row no-gutter">

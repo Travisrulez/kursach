@@ -49,7 +49,6 @@ switch($_GET["action"])
 					if($productId == $v['d_id'])
 						unset($_SESSION["cart_item"][$k]);
 				}
-				header('location:restaurants.php');
 			}
 			break;
 			
